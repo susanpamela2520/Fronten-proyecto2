@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogo de Juego</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel ="stylesheet" href="estilos3.css"/>
+
+    <script>
+        function stickyMenu(){
+            var sticky=document.getElementById('sticky');
+            if(window.pageYOffset > 220){
+                sticky.classList.add('sticky');
+            }else{
+                sticky.classList.remove('sticky');
+            }
+       
+        }
+
+        window.onscroll = function(){
+            stickyMenu();
+        }
+    </script>
+
+</head>
+<body>
+    <div class="parallax">
+        <div class="page-title">Catalogo de Juegos</div>
+    </div>
+
+    <div class="menu" id="sticky">
+        <ul class="menu-ul">
+
+            <a href="index.html" class="a-menu"><li>HomePage</li></a>
+        </ul>      
+         <div class="search-box">
+             <form>
+                <input type="text" placeholder="Search...." name="search" class="search-input">
+                <button type="submite"><i class="fas fa-search"></i></button>
+             </form>
+         </div>
+
+    </div>
+
+    <div class="card">
+        <img src="FIFA21.jpg" alt="game1" style="width:100%">
+        <h1>Fifa 21</h1>
+        <p class="price">Q.500.00</p>
+        <p>Deportes - Football</p>
+        <img src="GTA.jpg" alt="game2" style="width:100%">
+        <h1>Grand Thref Auto</h1>
+        <p class="price">Q.700.00</p>
+        <p>Accion-Disparos</p>
+        <img src="GW.jpg" alt="game3" style="width:100%">
+        <h1>God of war</h1>
+        <p class="price">Q.600.00</p>
+        <p>Aventura-Pelea</p>
+        <img src="MK8.jpg" alt="game4" style="width:100%">
+        <h1>Mariokart 8</h1>
+        <p class="price">Q.500.00</p>
+        <p>Aventura-Fantasia</p>
+        <img src="RE.jpg" alt="game5" style="width:100%">
+        <h1>Resident Evil</h1>
+        <p class="price">Q.900.00</p>
+        <p>Terror-Misterio</p>
+
+      </div>
+
+
+</body>
+</html>
